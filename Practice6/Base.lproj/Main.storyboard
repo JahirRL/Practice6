@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sOa-xp-cdY">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--El sistema solar-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="Pantalla1" customModule="Practice6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sistema.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JS1-I0-QCy">
+                                <rect key="frame" x="0.0" y="61" width="375" height="690"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JS1-I0-QCy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OoE-NQ-0cd"/>
+                            <constraint firstItem="JS1-I0-QCy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PIh-0C-Aek"/>
+                            <constraint firstItem="JS1-I0-QCy" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="Y6a-Zu-ZE7"/>
+                            <constraint firstItem="JS1-I0-QCy" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="nNH-Yx-Ifa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="El sistema solar" id="Whn-t3-HB4">
+                        <barButtonItem key="backBarButtonItem" title="Principal" id="br0-aL-QNp"/>
+                        <barButtonItem key="rightBarButtonItem" title="Inicio" id="mBL-ZW-J9G">
+                            <connections>
+                                <segue destination="icp-UC-ttV" kind="show" id="qb3-YQ-Suc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1172" y="-548"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GRP-qk-Hu4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sOa-xp-cdY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="S42-Uv-Dxw">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8dz-JV-C5v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iGo-LS-qUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="165.59999999999999" y="-548.27586206896558"/>
+        </scene>
+        <!--Mercurio-->
+        <scene sceneID="cj8-b3-yei">
+            <objects>
+                <viewController id="owv-JN-zjF" customClass="Mercurio" customModule="Practice6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PQd-Xb-6qm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mercurio.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="y7O-kx-KkP">
+                                <rect key="frame" x="0.0" y="61" width="375" height="690"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="52,918,016 km." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rT-pF-W0L">
+                                <rect key="frame" x="181.66666666666663" y="662" width="192" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El plantea más rápido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6b-qh-qVC">
+                                <rect key="frame" x="10" y="104" width="238" height="31.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distancia del sol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zf3-e4-rJu">
+                                <rect key="frame" x="193" y="633" width="169" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.98316198587417603" green="0.6901780366897583" blue="0.057826943695545197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duración del año" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4d-w1-adu">
+                                <rect key="frame" x="30" y="703" width="174" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.98316198590000003" green="0.6901780367" blue="0.057826943700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88 días terrestres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bf-1p-Nkb">
+                                <rect key="frame" x="12" y="732" width="210" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="y7O-kx-KkP" firstAttribute="centerY" secondItem="PQd-Xb-6qm" secondAttribute="centerY" id="1We-U5-F8E"/>
+                            <constraint firstItem="6rT-pF-W0L" firstAttribute="centerX" secondItem="Zf3-e4-rJu" secondAttribute="centerX" id="5Pv-Ng-9n4"/>
+                            <constraint firstItem="y7O-kx-KkP" firstAttribute="width" secondItem="x7r-Ti-2Hd" secondAttribute="width" id="5mW-X6-0L5"/>
+                            <constraint firstItem="o4d-w1-adu" firstAttribute="leading" secondItem="x7r-Ti-2Hd" secondAttribute="leading" constant="30" id="FEN-Vl-6Mj"/>
+                            <constraint firstAttribute="bottom" secondItem="Zf3-e4-rJu" secondAttribute="bottom" constant="150" id="OIS-4V-ZhO"/>
+                            <constraint firstItem="x7r-Ti-2Hd" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="s6b-qh-qVC" secondAttribute="trailing" symbolic="YES" id="OYf-35-MaM"/>
+                            <constraint firstItem="0bf-1p-Nkb" firstAttribute="centerX" secondItem="o4d-w1-adu" secondAttribute="centerX" id="PB8-nh-WgS"/>
+                            <constraint firstItem="0bf-1p-Nkb" firstAttribute="top" secondItem="o4d-w1-adu" secondAttribute="bottom" id="XrQ-14-ERl"/>
+                            <constraint firstItem="y7O-kx-KkP" firstAttribute="centerX" secondItem="PQd-Xb-6qm" secondAttribute="centerX" id="Y6g-M3-aKs"/>
+                            <constraint firstAttribute="bottom" secondItem="o4d-w1-adu" secondAttribute="bottom" constant="80" id="eMw-sS-fB2"/>
+                            <constraint firstItem="6rT-pF-W0L" firstAttribute="top" secondItem="Zf3-e4-rJu" secondAttribute="bottom" id="hK2-vr-0YA"/>
+                            <constraint firstItem="s6b-qh-qVC" firstAttribute="leading" secondItem="x7r-Ti-2Hd" secondAttribute="leading" constant="10" id="iVb-tL-Zy9"/>
+                            <constraint firstItem="y7O-kx-KkP" firstAttribute="height" secondItem="x7r-Ti-2Hd" secondAttribute="height" id="nJJ-Gu-PK0"/>
+                            <constraint firstItem="s6b-qh-qVC" firstAttribute="top" secondItem="x7r-Ti-2Hd" secondAttribute="top" constant="16" id="oMc-XS-VmW"/>
+                            <constraint firstItem="x7r-Ti-2Hd" firstAttribute="trailing" secondItem="Zf3-e4-rJu" secondAttribute="trailing" constant="13" id="yUR-wY-JOx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="x7r-Ti-2Hd"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mercurio" id="oAe-Lo-MbM">
+                        <barButtonItem key="rightBarButtonItem" title="Siguiente" id="0g9-H4-x07">
+                            <connections>
+                                <segue destination="Sa3-8q-frH" kind="show" id="whp-Np-CfX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJU-QB-ELf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3087" y="-548"/>
+        </scene>
+        <!--Venus-->
+        <scene sceneID="aAt-3i-P9J">
+            <objects>
+                <viewController id="Sa3-8q-frH" customClass="Venus" customModule="Practice6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bri-Gi-Au0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="venus.jpg" highlightedImage="venus.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="N27-WG-6Ue">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="108,034,048 km." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xac-ll-IU2">
+                                <rect key="frame" x="157.66666666666663" y="676" width="216" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distancia del sol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqV-yn-BWV">
+                                <rect key="frame" x="181" y="647" width="169" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.95085138082504272" green="0.71403878927230835" blue="0.15835359692573547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El punto caliente planetario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3Q-Kb-uDC">
+                                <rect key="frame" x="10" y="98" width="278" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duración del año" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6S-V6-Rcz">
+                                <rect key="frame" x="40" y="713" width="174" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.95085138079999998" green="0.71403878929999998" blue="0.1583535969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="225 días terrestres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpH-x2-NJs">
+                                <rect key="frame" x="14.666666666666671" y="742" width="225" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lqV-yn-BWV" firstAttribute="centerX" secondItem="Xac-ll-IU2" secondAttribute="centerX" id="2gj-Mi-Lh1"/>
+                            <constraint firstItem="N27-WG-6Ue" firstAttribute="width" secondItem="nPH-CC-05C" secondAttribute="width" id="9lw-yk-cOK"/>
+                            <constraint firstItem="Xac-ll-IU2" firstAttribute="top" secondItem="lqV-yn-BWV" secondAttribute="bottom" id="LtJ-Fd-31n"/>
+                            <constraint firstItem="nPH-CC-05C" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="h3Q-Kb-uDC" secondAttribute="trailing" symbolic="YES" id="Oco-GX-U5P"/>
+                            <constraint firstItem="N27-WG-6Ue" firstAttribute="centerY" secondItem="nPH-CC-05C" secondAttribute="centerY" id="ZLn-SI-LXF"/>
+                            <constraint firstItem="h3Q-Kb-uDC" firstAttribute="top" secondItem="nPH-CC-05C" secondAttribute="top" constant="10" id="Zhb-cE-awK"/>
+                            <constraint firstItem="N27-WG-6Ue" firstAttribute="centerX" secondItem="nPH-CC-05C" secondAttribute="centerX" id="aSS-kX-tAg"/>
+                            <constraint firstItem="xpH-x2-NJs" firstAttribute="top" secondItem="q6S-V6-Rcz" secondAttribute="bottom" id="cCq-wt-iVa"/>
+                            <constraint firstItem="h3Q-Kb-uDC" firstAttribute="leading" secondItem="nPH-CC-05C" secondAttribute="leading" constant="10" id="dAp-S8-mMR"/>
+                            <constraint firstItem="nPH-CC-05C" firstAttribute="trailing" secondItem="lqV-yn-BWV" secondAttribute="trailing" constant="25" id="gna-x4-Rgx"/>
+                            <constraint firstItem="q6S-V6-Rcz" firstAttribute="leading" secondItem="nPH-CC-05C" secondAttribute="leading" constant="40" id="mAm-dN-4hQ"/>
+                            <constraint firstAttribute="bottom" secondItem="q6S-V6-Rcz" secondAttribute="bottom" constant="70" id="mPB-ER-nc3"/>
+                            <constraint firstItem="N27-WG-6Ue" firstAttribute="height" secondItem="nPH-CC-05C" secondAttribute="height" id="r5w-wf-ejQ"/>
+                            <constraint firstAttribute="bottom" secondItem="lqV-yn-BWV" secondAttribute="bottom" constant="136" id="tNU-Lm-XpR"/>
+                            <constraint firstItem="xpH-x2-NJs" firstAttribute="centerX" secondItem="q6S-V6-Rcz" secondAttribute="centerX" id="wzy-0b-7wq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nPH-CC-05C"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Venus" id="0c5-VZ-5b1">
+                        <barButtonItem key="rightBarButtonItem" title="Siguiente" id="Sr8-bJ-c8N">
+                            <connections>
+                                <segue destination="1M4-tB-PPB" kind="show" id="kcZ-l9-QqY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DpL-sq-311" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4111" y="-548"/>
+        </scene>
+        <!--Tierra-->
+        <scene sceneID="Wlp-fL-PFI">
+            <objects>
+                <viewController id="1M4-tB-PPB" customClass="Tierra" customModule="Practice6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m19-l6-qBj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tierra.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4C4-fX-K1D">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nuestro planeta hogar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZL-Zr-0cq">
+                                <rect key="frame" x="10" y="98" width="230" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="147,657,624 km." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zog-nl-dOU">
+                                <rect key="frame" x="167.66666666666663" y="662" width="205" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duración del año" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7Q-Pb-x9f">
+                                <rect key="frame" x="35" y="715" width="174" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.33466136455535889" green="0.57283425331115723" blue="0.77656453847885132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="365 días terrestres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hy-WM-lAG">
+                                <rect key="frame" x="8.6666666666666714" y="744" width="227" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distancia del sol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAx-1R-KK3">
+                                <rect key="frame" x="186" y="633" width="168" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.33466136455535889" green="0.57283425331115723" blue="0.77656453847885132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="C7Q-Pb-x9f" firstAttribute="leading" secondItem="hUc-o2-IDT" secondAttribute="leading" constant="35" id="2yT-jO-qeT"/>
+                            <constraint firstItem="4C4-fX-K1D" firstAttribute="centerX" secondItem="hUc-o2-IDT" secondAttribute="centerX" id="A3n-Q2-cgK"/>
+                            <constraint firstItem="Zog-nl-dOU" firstAttribute="centerX" secondItem="KAx-1R-KK3" secondAttribute="centerX" id="Bn3-nu-HEF"/>
+                            <constraint firstItem="hUc-o2-IDT" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dZL-Zr-0cq" secondAttribute="trailing" symbolic="YES" id="DMc-ET-OnS"/>
+                            <constraint firstAttribute="bottom" secondItem="KAx-1R-KK3" secondAttribute="bottom" constant="150" id="Dis-gH-0f5"/>
+                            <constraint firstItem="0Hy-WM-lAG" firstAttribute="top" secondItem="C7Q-Pb-x9f" secondAttribute="bottom" id="JWF-ed-8ad"/>
+                            <constraint firstItem="0Hy-WM-lAG" firstAttribute="centerX" secondItem="C7Q-Pb-x9f" secondAttribute="centerX" id="KKt-NU-Bmu"/>
+                            <constraint firstItem="0Hy-WM-lAG" firstAttribute="top" secondItem="m19-l6-qBj" secondAttribute="bottom" constant="-68" id="Mj3-cy-8xz"/>
+                            <constraint firstItem="4C4-fX-K1D" firstAttribute="centerY" secondItem="hUc-o2-IDT" secondAttribute="centerY" id="OpO-YK-6pp"/>
+                            <constraint firstItem="Zog-nl-dOU" firstAttribute="top" secondItem="KAx-1R-KK3" secondAttribute="bottom" id="QgI-f1-w0E"/>
+                            <constraint firstItem="hUc-o2-IDT" firstAttribute="trailing" secondItem="KAx-1R-KK3" secondAttribute="trailing" constant="21" id="T5m-hp-ooe"/>
+                            <constraint firstItem="dZL-Zr-0cq" firstAttribute="leading" secondItem="hUc-o2-IDT" secondAttribute="leading" constant="10" id="lPe-uQ-DSa"/>
+                            <constraint firstItem="dZL-Zr-0cq" firstAttribute="top" secondItem="hUc-o2-IDT" secondAttribute="top" constant="10" id="lq5-0S-jAe"/>
+                            <constraint firstItem="4C4-fX-K1D" firstAttribute="height" secondItem="hUc-o2-IDT" secondAttribute="height" id="o2s-1d-3rH"/>
+                            <constraint firstItem="4C4-fX-K1D" firstAttribute="width" secondItem="hUc-o2-IDT" secondAttribute="width" id="uvP-aN-w7u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hUc-o2-IDT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tierra" id="ibm-em-Uss">
+                        <barButtonItem key="rightBarButtonItem" title="Siguiente" id="lz5-pL-eUY">
+                            <connections>
+                                <segue destination="Rjh-LQ-1n8" kind="show" id="c8J-oI-def"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GPZ-g4-JgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5093.6000000000004" y="-548.27586206896558"/>
+        </scene>
+        <!--Marte-->
+        <scene sceneID="uY6-dk-yv5">
+            <objects>
+                <viewController id="Rjh-LQ-1n8" customClass="Marte" customModule="Practice6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r9D-1P-Zgd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marte.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="J6K-yC-gCh">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El planeta rojo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Edh-ee-vgJ">
+                                <rect key="frame" x="10" y="98" width="180" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="225,398,240 km." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhK-iI-nuJ">
+                                <rect key="frame" x="158.66666666666663" y="662" width="216" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duración del año" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OR7-Yk-nmd">
+                                <rect key="frame" x="31" y="715" width="174" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.97724646329879761" green="0.50882142782211304" blue="0.36494863033294678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="687 días terrestres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdh-9Z-O2g">
+                                <rect key="frame" x="5" y="744" width="226" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distancia del sol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBv-tj-5cA">
+                                <rect key="frame" x="182" y="633" width="169" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.97724646329879761" green="0.50882142782211304" blue="0.36494863033294678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Edh-ee-vgJ" firstAttribute="leading" secondItem="gWO-jh-EjI" secondAttribute="leading" constant="10" id="2Vr-gm-4pe"/>
+                            <constraint firstItem="J6K-yC-gCh" firstAttribute="width" secondItem="gWO-jh-EjI" secondAttribute="width" id="68m-bh-B9s"/>
+                            <constraint firstItem="J6K-yC-gCh" firstAttribute="centerY" secondItem="gWO-jh-EjI" secondAttribute="centerY" id="8Ko-Ss-G7Q"/>
+                            <constraint firstItem="J6K-yC-gCh" firstAttribute="centerX" secondItem="gWO-jh-EjI" secondAttribute="centerX" id="F04-5C-qO2"/>
+                            <constraint firstItem="AhK-iI-nuJ" firstAttribute="top" secondItem="lBv-tj-5cA" secondAttribute="bottom" id="MZo-7P-OrK"/>
+                            <constraint firstItem="J6K-yC-gCh" firstAttribute="height" secondItem="gWO-jh-EjI" secondAttribute="height" id="O8p-ww-c0d"/>
+                            <constraint firstItem="gdh-9Z-O2g" firstAttribute="top" secondItem="OR7-Yk-nmd" secondAttribute="bottom" id="WgC-tJ-aL1"/>
+                            <constraint firstAttribute="bottom" secondItem="lBv-tj-5cA" secondAttribute="bottom" constant="150" id="ZHk-68-QX6"/>
+                            <constraint firstAttribute="bottom" secondItem="OR7-Yk-nmd" secondAttribute="bottom" constant="68" id="chQ-iS-k6E"/>
+                            <constraint firstItem="gWO-jh-EjI" firstAttribute="trailing" secondItem="lBv-tj-5cA" secondAttribute="trailing" constant="24" id="g4x-zw-TvF"/>
+                            <constraint firstItem="OR7-Yk-nmd" firstAttribute="leading" secondItem="gWO-jh-EjI" secondAttribute="leading" constant="31" id="hvc-Lg-Ohp"/>
+                            <constraint firstItem="Edh-ee-vgJ" firstAttribute="top" secondItem="gWO-jh-EjI" secondAttribute="top" constant="10" id="mlS-6k-B1X"/>
+                            <constraint firstItem="gWO-jh-EjI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Edh-ee-vgJ" secondAttribute="trailing" symbolic="YES" id="s8C-DF-FZi"/>
+                            <constraint firstItem="gdh-9Z-O2g" firstAttribute="centerX" secondItem="OR7-Yk-nmd" secondAttribute="centerX" id="yhm-qX-xdG"/>
+                            <constraint firstItem="AhK-iI-nuJ" firstAttribute="centerX" secondItem="lBv-tj-5cA" secondAttribute="centerX" id="zED-yx-9wa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gWO-jh-EjI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Marte" id="ySF-8v-qc1">
+                        <barButtonItem key="rightBarButtonItem" title="Siguiente" id="mwa-bC-TqN">
+                            <connections>
+                                <segue destination="Owt-Cp-zjE" kind="show" id="OkF-kX-Q5G"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7aK-e8-aMw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6103" y="-548"/>
+        </scene>
+        <!--Júpiter-->
+        <scene sceneID="i9e-OZ-YXh">
+            <objects>
+                <viewController id="Owt-Cp-zjE" customClass="Júpiter" customModule="Practice6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="URr-4X-8n2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="júpiter.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gSB-Eb-v6P">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El planeta más grande" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzo-hB-KiU">
+                                <rect key="frame" x="10" y="98" width="283" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="798,428,366 km." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOc-hl-WMp">
+                                <rect key="frame" x="156" y="662" width="217" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duración del año" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqh-Tm-5Ol">
+                                <rect key="frame" x="29" y="715" width="174" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.91603344678878784" green="0.63363838195800781" blue="0.33882585167884827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,333 días terrestres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFF-HW-1in">
+                                <rect key="frame" x="3" y="744" width="251" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distancia del sol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4X4-1t-NR0">
+                                <rect key="frame" x="180" y="633" width="169" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.91996175050735474" green="0.6375688910484314" blue="0.34287399053573608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gSB-Eb-v6P" firstAttribute="height" secondItem="2EP-B1-zO6" secondAttribute="height" id="15w-Dv-gkX"/>
+                            <constraint firstItem="UOc-hl-WMp" firstAttribute="top" secondItem="4X4-1t-NR0" secondAttribute="bottom" id="EL5-hs-r6n"/>
+                            <constraint firstItem="gSB-Eb-v6P" firstAttribute="centerX" secondItem="2EP-B1-zO6" secondAttribute="centerX" id="FXN-Ij-IQG"/>
+                            <constraint firstItem="2EP-B1-zO6" firstAttribute="trailing" secondItem="4X4-1t-NR0" secondAttribute="trailing" constant="26" id="ILb-aA-JPX"/>
+                            <constraint firstAttribute="bottom" secondItem="Nqh-Tm-5Ol" secondAttribute="bottom" constant="68" id="QYY-Nl-XCs"/>
+                            <constraint firstItem="wFF-HW-1in" firstAttribute="top" secondItem="Nqh-Tm-5Ol" secondAttribute="bottom" id="SFD-FN-WHR"/>
+                            <constraint firstItem="Nqh-Tm-5Ol" firstAttribute="leading" secondItem="2EP-B1-zO6" secondAttribute="leading" constant="29" id="SHC-yZ-CTy"/>
+                            <constraint firstItem="Pzo-hB-KiU" firstAttribute="top" secondItem="2EP-B1-zO6" secondAttribute="top" constant="10" id="TEK-5h-z28"/>
+                            <constraint firstItem="gSB-Eb-v6P" firstAttribute="width" secondItem="2EP-B1-zO6" secondAttribute="width" id="YE3-CE-GcX"/>
+                            <constraint firstItem="wFF-HW-1in" firstAttribute="centerX" secondItem="Nqh-Tm-5Ol" secondAttribute="centerX" constant="12.5" id="awm-89-fRK"/>
+                            <constraint firstItem="Pzo-hB-KiU" firstAttribute="leading" secondItem="2EP-B1-zO6" secondAttribute="leading" constant="10" id="g8R-xS-0oD"/>
+                            <constraint firstItem="2EP-B1-zO6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Pzo-hB-KiU" secondAttribute="trailing" symbolic="YES" id="gT9-zM-Qqr"/>
+                            <constraint firstItem="gSB-Eb-v6P" firstAttribute="centerY" secondItem="2EP-B1-zO6" secondAttribute="centerY" id="jrA-Ew-X3r"/>
+                            <constraint firstItem="UOc-hl-WMp" firstAttribute="centerX" secondItem="4X4-1t-NR0" secondAttribute="centerX" id="oNl-8o-CbW"/>
+                            <constraint firstAttribute="bottom" secondItem="4X4-1t-NR0" secondAttribute="bottom" constant="150" id="ohl-wI-na6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2EP-B1-zO6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Júpiter" id="F2d-lW-E5t">
+                        <barButtonItem key="rightBarButtonItem" title="Siguiente" id="iH6-j6-K8l">
+                            <connections>
+                                <segue destination="NeH-sk-ir3" kind="show" id="OiE-9Y-xgb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GH1-4E-Gra" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7056.8000000000002" y="-548.27586206896558"/>
+        </scene>
+        <!--Saturno-->
+        <scene sceneID="9ZL-Us-HHo">
+            <objects>
+                <viewController id="NeH-sk-ir3" customClass="Saturno" customModule="Practice6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IBY-GE-X0q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saturno.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fF9-2L-1SX">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joya de nuestro sistema solar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUK-le-jC4">
+                                <rect key="frame" x="10" y="98" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,504,705,243 km." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iP5-q4-gKB">
+                                <rect key="frame" x="133" y="659" width="235" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duración del año" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fp3-SF-peD">
+                                <rect key="frame" x="50" y="715" width="174" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.91436791419999996" green="0.41505926850000002" blue="0.46346014740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10,759 días terrestres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a68-Dq-Bh2">
+                                <rect key="frame" x="6" y="744" width="262" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distancia del sol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tz8-Cd-bnb">
+                                <rect key="frame" x="166" y="630" width="169" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.91043120619999995" green="0.41112202409999998" blue="0.45951056480000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="fF9-2L-1SX" firstAttribute="centerX" secondItem="IL3-XK-hyj" secondAttribute="centerX" id="0bE-JT-IIp"/>
+                            <constraint firstItem="fF9-2L-1SX" firstAttribute="height" secondItem="IL3-XK-hyj" secondAttribute="height" id="GOf-7H-gAu"/>
+                            <constraint firstItem="fp3-SF-peD" firstAttribute="leading" secondItem="IL3-XK-hyj" secondAttribute="leading" constant="50" id="H4g-wG-ivU"/>
+                            <constraint firstItem="IL3-XK-hyj" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RUK-le-jC4" secondAttribute="trailing" symbolic="YES" id="Jo5-XG-Nc1"/>
+                            <constraint firstItem="iP5-q4-gKB" firstAttribute="centerX" secondItem="Tz8-Cd-bnb" secondAttribute="centerX" id="Nr2-d8-Ild"/>
+                            <constraint firstItem="IL3-XK-hyj" firstAttribute="bottom" secondItem="Tz8-Cd-bnb" secondAttribute="bottom" constant="119" id="PJP-9C-0PC"/>
+                            <constraint firstItem="fF9-2L-1SX" firstAttribute="centerY" secondItem="IL3-XK-hyj" secondAttribute="centerY" id="YMv-66-9wN"/>
+                            <constraint firstItem="iP5-q4-gKB" firstAttribute="top" secondItem="Tz8-Cd-bnb" secondAttribute="bottom" id="Zya-Nd-Z7Z"/>
+                            <constraint firstItem="IL3-XK-hyj" firstAttribute="trailing" secondItem="Tz8-Cd-bnb" secondAttribute="trailing" constant="40" id="bJM-4S-EBK"/>
+                            <constraint firstItem="RUK-le-jC4" firstAttribute="top" secondItem="IL3-XK-hyj" secondAttribute="top" constant="10" id="cjo-jt-zml"/>
+                            <constraint firstItem="RUK-le-jC4" firstAttribute="leading" secondItem="IL3-XK-hyj" secondAttribute="leading" constant="10" id="ktL-Wk-ZaL"/>
+                            <constraint firstItem="a68-Dq-Bh2" firstAttribute="centerX" secondItem="fp3-SF-peD" secondAttribute="centerX" id="lPe-XU-lAY"/>
+                            <constraint firstItem="IL3-XK-hyj" firstAttribute="bottom" secondItem="fp3-SF-peD" secondAttribute="bottom" constant="34" id="s0S-aS-4pM"/>
+                            <constraint firstItem="fF9-2L-1SX" firstAttribute="width" secondItem="IL3-XK-hyj" secondAttribute="width" id="u8a-Ak-rUX"/>
+                            <constraint firstItem="a68-Dq-Bh2" firstAttribute="top" secondItem="fp3-SF-peD" secondAttribute="bottom" id="yqE-8V-248"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IL3-XK-hyj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Saturno" id="Pib-hh-s2O">
+                        <barButtonItem key="rightBarButtonItem" title="Siguiente" id="0uZ-44-uCc">
+                            <connections>
+                                <segue destination="VBu-zh-2SW" kind="show" id="9Ur-xN-ERt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mQt-YS-wgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7847" y="-548"/>
+        </scene>
+        <!--Urano-->
+        <scene sceneID="odH-u2-gz6">
+            <objects>
+                <viewController id="VBu-zh-2SW" customClass="Urano" customModule="Practice6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dFO-UA-TBP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="urano.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tmf-tT-Tx0">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El planeta de al lado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psZ-B1-cG1">
+                                <rect key="frame" x="10" y="98" width="238" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3,028,876,680 km." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PX-AT-R04">
+                                <rect key="frame" x="130" y="659" width="241" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duración del año" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0o-LB-k4S">
+                                <rect key="frame" x="50" y="715" width="174" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.53785324096679688" green="0.92127770185470581" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30,687 días terrestres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldl-gS-u9d">
+                                <rect key="frame" x="3.6666666666666572" y="744" width="267" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distancia del sol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNQ-so-asc">
+                                <rect key="frame" x="166" y="630" width="169" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.53785324096679688" green="0.92127770185470581" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="tmf-tT-Tx0" firstAttribute="centerY" secondItem="rb5-UE-2u6" secondAttribute="centerY" id="61D-q0-7Sz"/>
+                            <constraint firstItem="N0o-LB-k4S" firstAttribute="leading" secondItem="rb5-UE-2u6" secondAttribute="leading" constant="50" id="EM1-mD-f6l"/>
+                            <constraint firstItem="4PX-AT-R04" firstAttribute="centerX" secondItem="qNQ-so-asc" secondAttribute="centerX" id="H45-Ek-ot7"/>
+                            <constraint firstItem="rb5-UE-2u6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="psZ-B1-cG1" secondAttribute="trailing" symbolic="YES" id="O7F-12-HEv"/>
+                            <constraint firstAttribute="bottom" secondItem="N0o-LB-k4S" secondAttribute="bottom" constant="68" id="OIx-xd-v2x"/>
+                            <constraint firstItem="rb5-UE-2u6" firstAttribute="trailing" secondItem="qNQ-so-asc" secondAttribute="trailing" constant="40" id="TGm-u3-MwR"/>
+                            <constraint firstItem="4PX-AT-R04" firstAttribute="top" secondItem="qNQ-so-asc" secondAttribute="bottom" id="Tts-aI-slt"/>
+                            <constraint firstItem="tmf-tT-Tx0" firstAttribute="height" secondItem="rb5-UE-2u6" secondAttribute="height" id="UMZ-p6-eCu"/>
+                            <constraint firstItem="Ldl-gS-u9d" firstAttribute="centerX" secondItem="N0o-LB-k4S" secondAttribute="centerX" id="Vur-TV-oU9"/>
+                            <constraint firstItem="psZ-B1-cG1" firstAttribute="leading" secondItem="rb5-UE-2u6" secondAttribute="leading" constant="10" id="bIu-Qb-6mH"/>
+                            <constraint firstAttribute="bottom" secondItem="qNQ-so-asc" secondAttribute="bottom" constant="153" id="fNI-Ee-grM"/>
+                            <constraint firstItem="Ldl-gS-u9d" firstAttribute="top" secondItem="N0o-LB-k4S" secondAttribute="bottom" id="iqD-EM-xow"/>
+                            <constraint firstItem="tmf-tT-Tx0" firstAttribute="centerX" secondItem="rb5-UE-2u6" secondAttribute="centerX" id="sF5-wX-ecx"/>
+                            <constraint firstItem="tmf-tT-Tx0" firstAttribute="width" secondItem="rb5-UE-2u6" secondAttribute="width" id="v7p-7h-eHo"/>
+                            <constraint firstItem="psZ-B1-cG1" firstAttribute="top" secondItem="rb5-UE-2u6" secondAttribute="top" constant="10" id="weS-4u-X4X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rb5-UE-2u6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Urano" id="2PF-qn-2Q4">
+                        <barButtonItem key="rightBarButtonItem" title="Siguiente" id="DTZ-fW-Stv">
+                            <connections>
+                                <segue destination="3G6-qW-zxS" kind="show" id="646-cc-NWS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jnr-A6-Q3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8670" y="-548"/>
+        </scene>
+        <!--Neptuno-->
+        <scene sceneID="FeJ-qP-Tti">
+            <objects>
+                <viewController id="3G6-qW-zxS" customClass="Neptuno" customModule="Practice6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fKk-VH-uwv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neptuno.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Zem-Tz-jaE">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El planeta más salvaje" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8n-KW-Al6">
+                                <rect key="frame" x="10" y="98" width="263" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,478,654,661 km." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7c-2B-9a2">
+                                <rect key="frame" x="128.66666666666663" y="659" width="237.99999999999997" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duración del año" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgX-iE-WNA">
+                                <rect key="frame" x="47" y="715" width="174" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.60494118928909302" green="0.7932668924331665" blue="0.96810740232467651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60,190 días terrestres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqq-rx-hzU">
+                                <rect key="frame" x="2.6666666666666572" y="744" width="263" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distancia del sol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kS2-H5-s2I">
+                                <rect key="frame" x="163" y="630" width="169" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.57139045000076294" green="0.69235771894454956" blue="0.97037369012832642" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jqq-rx-hzU" firstAttribute="top" secondItem="EgX-iE-WNA" secondAttribute="bottom" id="17M-D8-2sh"/>
+                            <constraint firstItem="Zem-Tz-jaE" firstAttribute="centerX" secondItem="uGJ-KE-wFB" secondAttribute="centerX" id="Brb-Wq-407"/>
+                            <constraint firstItem="Zem-Tz-jaE" firstAttribute="height" secondItem="uGJ-KE-wFB" secondAttribute="height" id="Ckw-yn-EDM"/>
+                            <constraint firstItem="uGJ-KE-wFB" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="s8n-KW-Al6" secondAttribute="trailing" symbolic="YES" id="EmJ-D7-GHF"/>
+                            <constraint firstItem="s8n-KW-Al6" firstAttribute="leading" secondItem="uGJ-KE-wFB" secondAttribute="leading" constant="10" id="KlS-Ga-B0y"/>
+                            <constraint firstAttribute="bottom" secondItem="kS2-H5-s2I" secondAttribute="bottom" constant="153" id="Qqn-4G-BHF"/>
+                            <constraint firstItem="jqq-rx-hzU" firstAttribute="centerX" secondItem="EgX-iE-WNA" secondAttribute="centerX" id="RvI-QC-QSy"/>
+                            <constraint firstItem="uGJ-KE-wFB" firstAttribute="bottom" secondItem="EgX-iE-WNA" secondAttribute="bottom" constant="34" id="UC2-X7-PcX"/>
+                            <constraint firstItem="s8n-KW-Al6" firstAttribute="top" secondItem="uGJ-KE-wFB" secondAttribute="top" constant="10" id="asR-Aj-l4K"/>
+                            <constraint firstItem="l7c-2B-9a2" firstAttribute="centerX" secondItem="kS2-H5-s2I" secondAttribute="centerX" id="i1q-ij-rrl"/>
+                            <constraint firstItem="l7c-2B-9a2" firstAttribute="top" secondItem="kS2-H5-s2I" secondAttribute="bottom" id="i6z-Sp-pel"/>
+                            <constraint firstItem="uGJ-KE-wFB" firstAttribute="trailing" secondItem="kS2-H5-s2I" secondAttribute="trailing" constant="43" id="j9M-WZ-d8S"/>
+                            <constraint firstItem="Zem-Tz-jaE" firstAttribute="width" secondItem="uGJ-KE-wFB" secondAttribute="width" id="nAq-2h-BiP"/>
+                            <constraint firstItem="EgX-iE-WNA" firstAttribute="leading" secondItem="uGJ-KE-wFB" secondAttribute="leading" constant="47" id="tNH-iX-i8B"/>
+                            <constraint firstItem="Zem-Tz-jaE" firstAttribute="centerY" secondItem="uGJ-KE-wFB" secondAttribute="centerY" id="udU-0B-zrc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uGJ-KE-wFB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Neptuno" id="lBz-en-Ldp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z4s-zB-r5y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9514" y="-548"/>
+        </scene>
+        <!--Sol-->
+        <scene sceneID="ehm-Hz-hMd">
+            <objects>
+                <viewController id="icp-UC-ttV" customClass="Sol" customModule="Practice6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OnF-gZ-kZU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sol.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="6lL-u4-uRM">
+                                <rect key="frame" x="0.0" y="61" width="375" height="690"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nuestra estrella" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33Y-x5-lME">
+                                <rect key="frame" x="10" y="110" width="201" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de estrella" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRO-Wb-UGG">
+                                <rect key="frame" x="202" y="633" width="157" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.43450307846069336" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enana amarilla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lp-fJ-E6d">
+                                <rect key="frame" x="193" y="662" width="175" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~4.5 mil millones de años" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39f-Ds-uer">
+                                <rect key="frame" x="3.6666666666666572" y="732" width="307" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlK-8t-7DW">
+                                <rect key="frame" x="130" y="703" width="54" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.43450307849999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6lL-u4-uRM" firstAttribute="height" secondItem="TNr-P9-VTA" secondAttribute="height" id="1lq-xe-2dW"/>
+                            <constraint firstItem="6lp-fJ-E6d" firstAttribute="top" secondItem="gRO-Wb-UGG" secondAttribute="bottom" id="Abn-Ff-6F4"/>
+                            <constraint firstItem="39f-Ds-uer" firstAttribute="top" secondItem="hlK-8t-7DW" secondAttribute="bottom" id="NbP-0c-eX5"/>
+                            <constraint firstItem="6lL-u4-uRM" firstAttribute="centerY" secondItem="OnF-gZ-kZU" secondAttribute="centerY" id="ORg-t4-wll"/>
+                            <constraint firstItem="6lL-u4-uRM" firstAttribute="centerX" secondItem="OnF-gZ-kZU" secondAttribute="centerX" id="VPu-Ty-RDZ"/>
+                            <constraint firstAttribute="bottom" secondItem="hlK-8t-7DW" secondAttribute="bottom" constant="80" id="XmE-14-j3s"/>
+                            <constraint firstItem="TNr-P9-VTA" firstAttribute="trailing" secondItem="gRO-Wb-UGG" secondAttribute="trailing" constant="16" id="bu9-SX-JqI"/>
+                            <constraint firstItem="33Y-x5-lME" firstAttribute="top" secondItem="TNr-P9-VTA" secondAttribute="top" constant="22" id="bwR-ix-ItA"/>
+                            <constraint firstItem="33Y-x5-lME" firstAttribute="leading" secondItem="TNr-P9-VTA" secondAttribute="leading" constant="10" id="dPW-xd-FPz"/>
+                            <constraint firstItem="6lp-fJ-E6d" firstAttribute="centerX" secondItem="gRO-Wb-UGG" secondAttribute="centerX" id="oGi-mB-2ye"/>
+                            <constraint firstItem="39f-Ds-uer" firstAttribute="centerX" secondItem="hlK-8t-7DW" secondAttribute="centerX" id="oMg-R9-WHC"/>
+                            <constraint firstAttribute="bottom" secondItem="gRO-Wb-UGG" secondAttribute="bottom" constant="150" id="q47-R7-AeG"/>
+                            <constraint firstItem="6lL-u4-uRM" firstAttribute="width" secondItem="TNr-P9-VTA" secondAttribute="width" id="qtJ-f4-1pA"/>
+                            <constraint firstItem="hlK-8t-7DW" firstAttribute="leading" secondItem="TNr-P9-VTA" secondAttribute="leading" constant="130" id="wVM-cP-1uH"/>
+                            <constraint firstItem="TNr-P9-VTA" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="33Y-x5-lME" secondAttribute="trailing" symbolic="YES" id="x0f-Cj-H6c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TNr-P9-VTA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sol" id="gRx-D4-QEW">
+                        <barButtonItem key="rightBarButtonItem" title="Siguiente" id="nPb-GB-R2e">
+                            <connections>
+                                <segue destination="owv-JN-zjF" kind="show" id="ESt-sP-NCj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xUe-Pn-001" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2145" y="-548"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="júpiter.jpg" width="1280" height="1275"/>
+        <image name="marte.jpg" width="537" height="537"/>
+        <image name="mercurio.jpg" width="1036" height="1080"/>
+        <image name="neptuno.jpg" width="1280" height="1278"/>
+        <image name="saturno.jpg" width="1600" height="900"/>
+        <image name="sistema.jpg" width="1930" height="2440"/>
+        <image name="sol.jpeg" width="827" height="1080"/>
+        <image name="tierra.jpg" width="1280" height="1280"/>
+        <image name="urano.jpg" width="1035" height="1280"/>
+        <image name="venus.jpg" width="4096" height="4096"/>
+    </resources>
+</document>
