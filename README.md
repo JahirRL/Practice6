@@ -14,7 +14,6 @@ Aplicaci√≥n que hace un recorrido por el sistema solar la cual ofrece informaci√
 <img src="/img/2.png" width="300">
 <img src="/img/3.png" width="300">
 </p>
-
 <p>
 <img src="/img/4.png" width="900">
 <img src="/img/5.png" width="900">
